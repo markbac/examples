@@ -1,0 +1,25 @@
+usecaseDiagram
+    %% Define the actors
+    actor Customer
+    actor "Bank Employee" as BankEmployee
+    actor "Third-Party Payment Service" as ThirdParty
+
+    %% Define the use cases
+    usecase "View Account Details" as U1
+    usecase "Transfer Funds" as U2
+    usecase "Pay Bills" as U3
+    usecase "Request Loan" as U4
+    usecase "Manage Beneficiaries" as U5
+    usecase "Customer Support" as U6
+    usecase "Generate Account Statement" as U7
+    usecase "View Loan Status" as U8
+
+    %% Define relationships between actors and use cases
+    Customer -- U1
+    Customer -- U2
+    Customer -- U3
+    Customer -- U5
+    Customer -- U7
+    Customer -- U8
+    BankEmployee -- U4
+    Ban
